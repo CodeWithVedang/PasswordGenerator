@@ -1,5 +1,6 @@
 # PasswordGenerator
-Password generator using python 
+Password generator using python
+
 step 1 :clone or download the repository ⬇️
 step  2(optional) : specify the path of password list if you want 
 step 3 : Run the code 🏃
