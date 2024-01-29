@@ -13,9 +13,10 @@ def generate_password_list(words):
             percentage_complete = (current_permutations / total_permutations) * 100
             print(f"Generating passwords: {percentage_complete:.2f}% complete", end='\r')
     
+    print(f"\nTotal combinations generated: {total_permutations}")
     return password_list
 
-# Get input from user for input_words
+# Get input from the user for input_words
 input_words = input("Enter a list of words separated by spaces: ").split()
 
 result = generate_password_list(input_words)
@@ -26,4 +27,4 @@ with open(file_path, 'w') as file:
     for password in result:
         file.write(password + '\n')
 
-print(f"\nPasswords saved to '{file_path}'")
+print(f"Passwords saved to '{file_path}'")
